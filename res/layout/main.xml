@@ -59,7 +59,7 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_marginTop="10dp"
 	    	
-	    	android:hint="Enter a message (optional)"
+	    	android:hint="Enter a message"
 	    	/>
 	    	
 	    <LinearLayout android:orientation="horizontal"
@@ -70,22 +70,40 @@
 	    	android:layout_marginBottom="5dp"
 	    	>
 	    	
-	    	<Button android:id="@+id/pick_photo"
-	    		android:layout_width="120dp"
+	    	<LinearLayout android:orientation="vertical"
+	    		android:layout_width="wrap_content"
 	    		android:layout_height="wrap_content"
 	    		
-	    		android:padding="5dp"
+	    		android:layout_weight="1"
+	    		>
 	    		
-	    		android:text="Choose Photo"
-	    		/>
+		    	<Button android:id="@+id/pick_photo"
+		    		android:layout_width="120dp"
+		    		android:layout_height="wrap_content"
+		    		
+		    		android:padding="5dp"
+		    		
+		    		android:text="Choose Photo"
+		    		/>
+		    		
+		    	<Button android:id="@+id/take_photo"
+		    		android:layout_width="120dp"
+		    		android:layout_height="wrap_content"
+		    		
+		    		android:padding="5dp"
+		    		
+		    		android:text="Take Photo"
+		    		/>
+	    		
+	    	</LinearLayout>
 	    	
 	    	<ImageView android:id="@+id/photo"
 	    		android:layout_width="100dp"
 	    		android:layout_height="100dp"
 	    		
-	    		android:padding="5dp"
+	    		android:layout_weight="1"
 	    		
-	    		android:visibility="gone"
+	    		android:padding="5dp"
 	    		/>
 	    	
 	    </LinearLayout>

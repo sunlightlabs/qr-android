@@ -11,7 +11,7 @@
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:layout_weight="0"
-    	android:padding="12dp"
+    	android:padding="5dp"
     	
     	android:background="#336699"
     	android:gravity="center_vertical"
@@ -32,7 +32,7 @@
     		
     		android:textColor="#ffffff"
     		android:textSize="30sp"
-    		android:text="Sunlight QR"
+    		android:text="@string/app_name"
     		/>
     	
     </LinearLayout>
@@ -53,13 +53,22 @@
     	android:paddingLeft="30dp"
     	android:paddingRight="30dp"
     	>
+    	
+    	<Button android:id="@+id/print"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+	    	
+	    	android:textSize="20sp"
+	    	android:text="@string/print"
+	    	/>
     
 	    <EditText android:id="@+id/message"
 	    	android:layout_width="fill_parent"
 	    	android:layout_height="wrap_content"
 	    	android:layout_marginTop="10dp"
 	    	
-	    	android:hint="Enter a message"
+	    	android:hint="@string/message_hint"
 	    	/>
 	    	
 	    <LinearLayout android:orientation="horizontal"
@@ -83,7 +92,7 @@
 		    		
 		    		android:padding="5dp"
 		    		
-		    		android:text="Choose Photo"
+		    		android:text="@string/choose_photo"
 		    		/>
 		    		
 		    	<Button android:id="@+id/take_photo"
@@ -92,7 +101,7 @@
 		    		
 		    		android:padding="5dp"
 		    		
-		    		android:text="Take Photo"
+		    		android:text="@string/take_photo"
 		    		/>
 	    		
 	    	</LinearLayout>
@@ -108,16 +117,7 @@
 	    	
 	    </LinearLayout>
 	    
-	    <Button android:id="@+id/print"
-	    	android:layout_width="fill_parent"
-	    	android:layout_height="wrap_content"
-	    	android:layout_marginTop="20dp"
-	    	
-	    	android:textSize="20sp"
-	    	android:text="Print"
-	    	/>
-	    
-	    <ProgressBar android:id="@+id/opening"
+	    <ProgressBar android:id="@+id/progress"
 	   		android:layout_width="wrap_content"
 	   		android:layout_height="wrap_content"
 	   		
@@ -156,7 +156,7 @@
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
     		
-    		android:text="Scan Code"
+    		android:text="@string/scan"
     		android:textSize="18sp"
     		/>
     

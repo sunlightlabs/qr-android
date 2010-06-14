@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MainUpload!</string>
-    <string name="app_name">Sunlight QR</string>
+    <string name="app_name">Sunlight 2D</string>
+    <string name="print">Print</string>
+    <string name="scan">Scan Code</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="message_hint">Enter a message</string>
 </resources>

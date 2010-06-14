@@ -3,10 +3,145 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    
+    android:background="#668899"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    
+    <LinearLayout android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0"
+    	android:padding="12dp"
+    	
+    	android:background="#336699"
+    	android:gravity="center_vertical"
+    	>
+    	
+    	<ImageView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="5dp"
+    		android:layout_marginRight="24dp"
+    		
+    		android:src="@drawable/icon"
+    		/>
+    		
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		
+    		android:textColor="#ffffff"
+    		android:textSize="30sp"
+    		android:text="Sunlight QR"
+    		/>
+    	
+    </LinearLayout>
+    
+    <View
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="#dddddd"
+    	/>	
+    
+    <LinearLayout android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	
+    	android:layout_weight="1"
+    	
+    	android:paddingTop="10dp"
+    	android:paddingLeft="30dp"
+    	android:paddingRight="30dp"
+    	>
+    
+	    <EditText android:id="@+id/message"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+	    	
+	    	android:hint="Enter a message (optional)"
+	    	/>
+	    	
+	    <LinearLayout android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	
+	    	android:layout_marginTop="5dp"
+	    	android:layout_marginBottom="5dp"
+	    	>
+	    	
+	    	<Button android:id="@+id/pick_photo"
+	    		android:layout_width="120dp"
+	    		android:layout_height="wrap_content"
+	    		
+	    		android:padding="5dp"
+	    		
+	    		android:text="Choose Photo"
+	    		/>
+	    	
+	    	<ImageView android:id="@+id/photo"
+	    		android:layout_width="100dp"
+	    		android:layout_height="100dp"
+	    		
+	    		android:padding="5dp"
+	    		
+	    		android:visibility="gone"
+	    		/>
+	    	
+	    </LinearLayout>
+	    
+	    <Button android:id="@+id/print"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="20dp"
+	    	
+	    	android:textSize="20sp"
+	    	android:text="Print"
+	    	/>
+	    
+	    <ProgressBar android:id="@+id/opening"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		
+	   		android:layout_gravity="center_horizontal"
+	   		android:layout_marginTop="40dp"
+	   		
+	   		style="?android:attr/progressBarStyleLarge"
+	   		
+	   		android:visibility="invisible"
+	   		/>
+    
+    </LinearLayout>
+    
+    <View
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="#dddddd"
+    	/>
+    	
+    <LinearLayout android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0"
+    	
+    	android:gravity="center"
+    	
+    	android:paddingTop="5dp"
+    	android:paddingBottom="5dp"
+    	
+    	android:background="#555555"
+    	
+    	android:visibility="gone"
+    	>
+    
+    	<Button android:id="@+id/scan"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		
+    		android:text="Scan Code"
+    		android:textSize="18sp"
+    		/>
+    
+    </LinearLayout>
+    
 </LinearLayout>

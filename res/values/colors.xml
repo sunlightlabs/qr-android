@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="main_gradient_top">#233853</color>
+	<color name="main_gradient_bottom">#385375</color>
+	<color name="main_title">#eeeeee</color>
+	<color name="main_background">#052244</color>
+</resources>

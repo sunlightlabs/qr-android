@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     
-    android:background="#668899"
+    android:background="@color/main_background"
     >
     
     <LinearLayout android:orientation="horizontal"
@@ -13,7 +13,7 @@
     	android:layout_weight="0"
     	android:padding="5dp"
     	
-    	android:background="#336699"
+    	android:background="@drawable/main_gradient"
     	android:gravity="center_vertical"
     	>
     	
@@ -30,7 +30,7 @@
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
     		
-    		android:textColor="#ffffff"
+    		android:textColor="@color/main_title"
     		android:textSize="30sp"
     		android:text="@string/app_name"
     		/>
@@ -39,8 +39,8 @@
     
     <View
     	android:layout_width="fill_parent"
-    	android:layout_height="1dp"
-    	android:background="#dddddd"
+    	android:layout_height="1px"
+    	android:background="#233853"
     	/>	
     
     <LinearLayout android:orientation="vertical"
@@ -54,16 +54,7 @@
     	android:paddingRight="30dp"
     	>
     	
-    	<Button android:id="@+id/print"
-	    	android:layout_width="fill_parent"
-	    	android:layout_height="wrap_content"
-	    	android:layout_marginTop="10dp"
-	    	
-	    	android:textSize="20sp"
-	    	android:text="@string/print"
-	    	/>
-    
-	    <EditText android:id="@+id/message"
+		<EditText android:id="@+id/message"
 	    	android:layout_width="fill_parent"
 	    	android:layout_height="wrap_content"
 	    	android:layout_marginTop="10dp"
@@ -75,7 +66,7 @@
 	    	android:layout_width="fill_parent"
 	    	android:layout_height="wrap_content"
 	    	
-	    	android:layout_marginTop="5dp"
+	    	android:layout_marginTop="10dp"
 	    	android:layout_marginBottom="5dp"
 	    	>
 	    	
@@ -106,16 +97,38 @@
 	    		
 	    	</LinearLayout>
 	    	
-	    	<ImageView android:id="@+id/photo"
-	    		android:layout_width="100dp"
-	    		android:layout_height="100dp"
+	    	<FrameLayout
+	    		android:layout_width="104dp"
+	    		android:layout_height="104dp"
 	    		
-	    		android:layout_weight="1"
+	    		android:padding="2dp"
 	    		
-	    		android:padding="5dp"
-	    		/>
+	    		android:background="@color/main_gradient_bottom"
+	    		
+	    		android:gravity="center"
+	    		>
+	    		
+		    	<ImageView android:id="@+id/photo"
+		    		android:layout_width="100dp"
+		    		android:layout_height="100dp"
+		    		
+		    		android:padding="5dp"
+		    		
+		    		android:background="@color/main_background"
+		    		/>
+	    		
+	    	</FrameLayout>
 	    	
 	    </LinearLayout>
+	    
+	    <Button android:id="@+id/print"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="10dp"
+	    	
+	    	android:textSize="20sp"
+	    	android:text="@string/print"
+	    	/>
 	    
 	    <ProgressBar android:id="@+id/progress"
 	   		android:layout_width="wrap_content"
@@ -135,6 +148,8 @@
     	android:layout_width="fill_parent"
     	android:layout_height="1dp"
     	android:background="#dddddd"
+    	
+    	android:visibility="gone"
     	/>
     	
     <LinearLayout android:orientation="horizontal"
